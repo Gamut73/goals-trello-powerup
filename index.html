@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+    <script>
+        TrelloPowerUp.initialize({
+            'card-buttons': function (t, options) {
+                return [
+                    {
+                        icon: "https://i.pinimg.com/originals/a4/49/43/a449431f174392bfbbbab501400e83be.jpg",
+                        text: "Greetings and Salutations!",
+                        callback: function (t) {
+                            return t.card().then(card => alert('Greetings and Salutations'))
+                        }
+                    }
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
